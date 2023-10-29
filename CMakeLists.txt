@@ -8,9 +8,11 @@ set(CMAKE_CXX_STANDARD 14)
 # Find OpenCV
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
+
+message("--------------------------------------------------") 
 message("opencv dir = ${OpenCV_INCLUDE_DIRS}")
 message("Opencv lib = ${OpenCV_LIBRARIES}") 
-
+message("--------------------------------------------------") 
 
 set (EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 
